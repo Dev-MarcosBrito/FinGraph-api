@@ -3,11 +3,9 @@ import type { FastifyInstance } from "fastify";
 import routes from "./routes/index.js";
 
 const app: FastifyInstance = Fastify({
-
-    logger: true
-
+	logger: true,
 });
 
-app.register(routes)
+app.register(routes);
 
 export default app;
